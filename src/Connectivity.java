@@ -13,7 +13,7 @@ public class Connectivity {
 
             // database connection string
             // MySQL jdbc:mysql://{HOST}[:{PORT}][/{DB}]
-            String url = "jdbc:mysql://smcse.city.ac.uk/phpmyadmin:3306/db_sql.php?db=adbt079";
+            String url = "jdbc:mysql://smcse.city.ac.uk/phpmyadmin/db_sql.php?db=adbt079";
             // username and password
             conn = DriverManager.getConnection(url, "adbt079", "200006212");
 
