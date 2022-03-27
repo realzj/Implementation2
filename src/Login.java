@@ -14,6 +14,7 @@ public class Login extends JDialog {
     private JPanel JPanel;
     private JPanel panel1;
 
+
     public Login(JFrame parent){
         super(parent);
         setTitle("Login");

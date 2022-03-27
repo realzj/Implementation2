@@ -24,6 +24,7 @@ public class Recepcionist extends JDialog {
     private JButton printInvoiceButton;
     private JTextField DescriptionText;
 
+
     public Recepcionist(JFrame parent) {
         super(parent);
         setTitle("Receptionist");
