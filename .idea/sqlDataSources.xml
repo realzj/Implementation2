@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="24689c2a-7939-40a4-9fd3-44df08b08586" name="Team16 Mapping">
+      <data-sources db="b4ccd3b8-7f0e-4ab5-90fb-7dbe6560b2fc" />
+    </mapping>
+    <mapping uuid="93d0fdc2-a196-4846-95fe-f9bddebb7227" name="Team16 [2] Mapping">
+      <data-sources db="c1ce83cc-fb1a-4328-b1e3-1a186ce50e58" ddl="4ed4616e-fc75-4d58-ac32-fa1f3bedd965" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
