@@ -13,9 +13,9 @@ public class Connectivity {
 
             // database connection string
             // MySQL jdbc:mysql://{HOST}[:{PORT}][/{DB}]
-            String url = "jdbc:mysql://smcse.city.ac.uk/phpmyadmin/db_sql.php?db=adbt079";
             // username and password
-            conn = DriverManager.getConnection(url, "adbt079", "200006212");
+            conn = DriverManager.getConnection("jdbc:mysql:///smcse-adbt079.city.ac.uk:3306/adbt079", "adbt079", "200006212");
+
 
             // examples of using the database
             doTests();
