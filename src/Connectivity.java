@@ -13,12 +13,14 @@ public class Connectivity {
 
             // database connection string
             // MySQL jdbc:mysql://{HOST}[:{PORT}][/{DB}]
+            String url = "jdbc:mysql://localhost:3306/adbt079";
             // username and password
-            conn = DriverManager.getConnection("jdbc:mysql:///smcse-adbt079.city.ac.uk:3306/adbt079", "adbt079", "200006212");
+            conn = DriverManager.getConnection(url, "adbt079", "200006212");
+            System.out.println("Connected");
 
 
             // examples of using the database
-            doTests();
+            //doTests();
 
             // cleanup, close the connection
             conn.close();
