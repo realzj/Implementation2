@@ -1,7 +1,7 @@
 import java.sql.*;
 
 public class Connectivity {
-    Connection conn;
+    static Connection conn;
 
     public static void main(String[] args) {
         new Connectivity();
@@ -13,14 +13,13 @@ public class Connectivity {
 
             // database connection string
             // MySQL jdbc:mysql://{HOST}[:{PORT}][/{DB}]
-            String url = "jdbc:mysql://localhost:3306/adbt079";
+            String url = "jdbc:mysql://smcse-stuproj00.city.ac.uk/adbt079";
             // username and password
             conn = DriverManager.getConnection(url, "adbt079", "200006212");
             System.out.println("Connected");
 
-
             // examples of using the database
-            //doTests();
+            doTests();
 
             // cleanup, close the connection
             conn.close();
@@ -57,8 +56,8 @@ public class Connectivity {
         System.out.print("\n[Performing INSERT] ... ");
         try {
             Statement st = conn.createStatement();
-            st.executeUpdate("INSERT INTO team16Logins (username, password) " +
-                    "VALUES ('Paulius', 'Kancleris')");
+            st.executeUpdate("INSERT INTO team16Logins (name,login, password, role) " +
+                    "VALUES ('Penelope Carr', 'Penelope','PinkMobile','Receptionist')");
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
